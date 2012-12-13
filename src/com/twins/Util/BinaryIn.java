@@ -1,3 +1,4 @@
+package com.twins.Util;
 /*************************************************************************
  *  Compilation:  javac BinaryIn.java
  *  Execution:    java BinaryIn input output
@@ -316,21 +317,5 @@ public final class BinaryIn {
         char c = readChar();
         byte x = (byte) (c & 0xff);
         return x;
-    }
-    
-   /**
-     * Test client. Reads in the name of a file or url (first command-line
-     * argument) and writes it to a file (second command-line argument).
-     */
-    public static void main(String[] args) {
-        BinaryIn  in  = new BinaryIn(args[0]);
-        BinaryOut out = new BinaryOut(args[1]);
-
-        // read one 8-bit char at a time
-        while (!in.isEmpty()) {
-            char c = in.readChar();
-            out.write(c);
-        }
-        out.flush();
     }
 }
