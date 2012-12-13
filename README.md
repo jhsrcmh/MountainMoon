@@ -1,4 +1,4 @@
 MountainMoon
 ============
 
-Gives you some solution of Discrete-Event System Simulation
+Give you some solution of Discrete-Event System Simulation
